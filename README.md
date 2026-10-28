@@ -48,4 +48,4 @@ Users can create, view, edit and delete blog posts through a clean, responsive i
 This version does not use a database. Posts are stored in memory, so they are cleared every time the server restarts.
 
 Screenshot:
-<img width="1917" height="1061" alt="image" src="https://github.com/user-attachments/assets/c5b98577-824e-4126-9e32-23b648ed0919" />
+<img width="1908" height="1022" alt="image" src="https://github.com/user-attachments/assets/090f0826-e70c-4d3b-bf2f-b400527d4557" />
