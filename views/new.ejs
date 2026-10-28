@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+  <div class="form-card">
+    <h1>New Post</h1>
+
+    <form action="/posts" method="POST">
+
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" placeholder="Enter post title" required>
+
+      <label for="content">Content</label>
+      <textarea id="content" name="content" rows="10" placeholder="Write your post..." required></textarea>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn-primary">Publish</button>
+        <a href="/" class="btn-cancel">Cancel</a>
+      </div>
+
+    </form>
+  </div>
+
+
+
+<%- include("partials/footer.ejs") %>

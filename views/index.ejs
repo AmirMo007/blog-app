@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<h1>All posts</h1>
+
+  <% if (posts.length === 0) { %>
+    <p class="empty">No posts yet. Click "+ New Post" to write one.</p>
+  <% } %>
+
+  <% posts.forEach(post => { %>
+    <div class="post-card">
+      <h2><%= post.title %></h2>
+      <p class="post-date"><%= post.date %></p>
+      <p class="post-content"><%= post.content %></p>
+
+        <div class="post-actions">
+            <a href="/edit/<%= post.id %>" class="btn-edit">Edit</a>
+
+            <form action="/delete/<%= post.id %>" method="POST" onsubmit="return confirm('Delete this post?');">
+                 <button type="submit" class="btn-delete">Delete</button>
+            </form>
+        </div>
+    </div>
+  <% }) %>
+
+<%- include("partials/footer.ejs") %>
